@@ -1,31 +1,31 @@
 /* src/components/NewsletterSection.css */
 .newsletter-section {
-    padding: 500px;
-    background-color: #f5f5f5; /* Cambia esto al color que desees */
-    text-align: center;
-  }
-  
-  .newsletter-section h2 {
-    margin-bottom: 10px;
-  }
-  
-  .newsletter-section form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .newsletter-section input[type="email"] {
-    width: 300px;
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-  .newsletter-section button {
-    padding: 10px 20px;
-    background-color: #333; /* Cambia esto al color que desees */
-    color: #fff; /* Cambia esto al color que desees */
-    border: none;
-    cursor: pointer;
-  }
-  
+  padding: 20px;
+  background-color: #f5f5f5; /* Cambia esto al color que desees */
+  text-align: center;
+  margin-top: -350px; /* Ajusta este valor para acercar más la sección */
+}
+
+.newsletter-section h2 {
+  margin-bottom: 10px;
+}
+
+.newsletter-section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-section input[type="email"] {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.newsletter-section button {
+  padding: 10px 20px;
+  background-color: #333; /* Cambia esto al color que desees */
+  color: #fff; /* Cambia esto al color que desees */
+  border: none;
+  cursor: pointer;
+}

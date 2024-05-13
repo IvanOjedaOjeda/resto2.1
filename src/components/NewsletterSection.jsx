@@ -1,3 +1,4 @@
+// src/components/NewsletterSection.js
 import React from 'react';
 import './NewsletterSection.css'; // Importa el archivo CSS para los estilos de la sección
 
