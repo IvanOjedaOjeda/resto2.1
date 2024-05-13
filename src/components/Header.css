@@ -11,6 +11,11 @@
     flex-direction: column; /* Apila los elementos verticalmente */
     align-items: center; /* Centra horizontalmente los elementos */
   }
+
+  .logo {
+    width: 200px; /* Ajusta el ancho del logo según sea necesario */
+    margin-right: 30px; /* Espacio entre el logo y el título */
+  }
   
   .header h1 {
     margin-bottom: 10px; /* Espacio inferior entre el título y la navegación */
@@ -24,7 +29,7 @@
   }
   
   .header nav ul li {
-    margin-right: 10px; /* Espacio entre los elementos */
+    margin-right: 30px; /* Espacio entre los elementos */
   }
   
   .header nav ul li:last-child {
