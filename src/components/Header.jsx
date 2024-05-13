@@ -7,12 +7,12 @@ const Header = () => {
   return (
     <header className="header">
       <img src={logo} alt="Logo del restaurante" className="logo" />
-      <h1>¡Bienvenido a mi sitio web!</h1>
+      <h1>¡Bienvenidos al placer de comer!</h1>
       <nav>
         <ul>
           <li><a href="/">Inicio</a></li>
-          <li><a href="/acerca-de">Acerca de</a></li>
-          <li><a href="/contacto">Contacto</a></li>
+          <li><a href="/Menu">Menu</a></li>
+          <li><a href="/Reservas">Reservas</a></li>
         </ul>
       </nav>
     </header>
