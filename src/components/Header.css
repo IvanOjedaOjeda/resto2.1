@@ -1,0 +1,11 @@
+/* src/components/Header.css */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Cambia esto al color que desees */
+    color: #fff; /* Cambia esto al color que desees */
+    padding: 10px 20px;
+  }
+  
