@@ -1,0 +1,43 @@
+/* src/components/StorySection.css */
+.story-section {
+    padding: 300px;
+    background-color: #f5f5f5;
+    /* Cambia esto al color que desees */
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Aumentar el margen inferior para dar espacio */
+}
+
+.side-image,
+.main-image {
+    max-width: 30%;
+    /* Ajusta el ancho de las imágenes */
+    height: auto;
+    margin: 0 10px;
+    /* Añade margen entre las imágenes */
+}
+
+.content {
+    text-align: center;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+
+}
+
+.content h2 {
+    margin-bottom: 10px;
+}
+
+/* src/components/StorySection.css */
+.content p {
+    text-align: justify;
+    /* Aplica justificación al texto del párrafo */
+}
