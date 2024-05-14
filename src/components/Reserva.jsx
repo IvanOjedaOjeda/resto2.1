@@ -1,5 +1,5 @@
-import React from 'react'
-
+ import React from 'react'
+ 
 const Reserva = (props) => {
     const obtenerNombre = (valor) => {
         props.setNombre(valor);
@@ -22,4 +22,4 @@ const Reserva = (props) => {
     );
 }
 
-export default Reserva;
+export default Reserva; 

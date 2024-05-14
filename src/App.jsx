@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 
 import './App.css'
 
@@ -9,14 +9,15 @@ import NewsletterSection from './components/NewsletterSection';
 import Footer from './components/Footer';
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+
 import { collection, addDoc } from 'firebase/firestore';
 import Reserva from './components/Reserva';
 
 function App() {
-  const [count, setCount] = useState("");
-  const [count2, setCount2] = useState("");
+   const [count, setCount] = useState(0);
+  const [count2, setCount2] = useState(4);
 
-  const [reservas, setReservas] = useState ();
+  /* const [reservas, setReservas] = useState (); */
 
   const [nombre, setNombre]= useState("");
   const [email, setEmail]= useState("");
@@ -24,7 +25,7 @@ function App() {
 
   const cambioValor = () => {
     setCount(1 + 1);
-  }
+  } 
 
   return (
     <div>
@@ -45,10 +46,11 @@ const firebaseConfig = {
   storageBucket: "formulario-de-reserva-ad982.appspot.com",
   messagingSenderId: "359614704391",
   appId: "1:359614704391:web:073d52012c5303960db3a2"
-};
+}; 
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const db = getFirestore(app); 
+
 
 /* console.log({db}); */
 
@@ -61,29 +63,30 @@ const docRef = async (e)=> {
    });
 
   
-  /* console.log("El documento ingresado es: ", res.id) */
-};
+   console.log("El documento ingresado es: ", res.id) 
+}; 
 
-const listaReservas = async ()=>{
+/* const listaReservas = async ()=>{ */
+  try{
   const reservaCol = collection(db, "reserva");
   const reservaSnapshot = await getDocs(reservaCol);
   const reservaLista = reservaSnapshot.docs.map((doc)=> doc.data());
   setReservas(reservaLista);
-};
+  }catch(error){
+    console.log(error === 404);
+    if (error === 404) {
+      console.log('No se encontró nada');
+    }
+}; 
 
-useEffect(()=>{
+/* useEffect(()=>{
   listaReservas();
 
 }, [])
 
 
-
-
-
-
-
-
 <Reserva
+
 docRef={docRef}
 nombre={nombre}
 email={email}
@@ -91,7 +94,7 @@ fecha={fecha}
 setNombre={setNombre}
 setEmail={setEmail}
 setFecha={setFecha}
-/>
+/> 
 
 <div>
   {reservas?.map((reserva)=>(
@@ -100,6 +103,6 @@ setFecha={setFecha}
     <p>Nombre: {reserva.nombre}</p>
     </>
   ))}
-</div>
+</div> */
 
 export default App;
